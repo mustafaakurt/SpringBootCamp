@@ -1,6 +1,6 @@
 package com.company.designpatterns.mediator;
 
 public interface Mediator {
-    void sendMessage(String message, Colleague colleague);
-    void addColleague(Colleague colleague);
+    void sendMessage(String message, Student student);
+    void addStudent(Student student);
 }

@@ -1,9 +1,9 @@
 package com.company.designpatterns.mediator;
 
-public abstract class Colleague {
+public abstract class Student {
     protected Mediator mediator;
 
-    public Colleague(Mediator mediator){
+    public Student(Mediator mediator){
         this.mediator = mediator;
     }
 

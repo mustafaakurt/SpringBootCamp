@@ -1,6 +1,6 @@
 package com.company.designpatterns.mediator;
 
-public class RemoteStudent extends Colleague{
+public class RemoteStudent extends Student {
     public RemoteStudent(Mediator mediator) {
         super(mediator);
     }
