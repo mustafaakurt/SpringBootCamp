@@ -15,7 +15,11 @@ public class CreditCardStrategy implements PaymentStrategy{
 
     @Override
     public void pay(int amount) {
-        System.out.println("" + amount + "$ paid with Credit Card");
+        if(amount >= 0){
+            System.out.println(""+ amount +"$ paid with Credit Card");
+        }else if (amount <= 0){
+            System.out.println("Shopping Cart is empty");
+        }
     }
 
 }

@@ -11,6 +11,11 @@ public class PaypalStrategy implements PaymentStrategy{
 
     @Override
     public void pay(int amount) {
-        System.out.println(""+ amount +"$ paid with Paypal");
+        if(amount >= 0){
+            System.out.println(""+ amount +"$ paid with Paypal");
+        }else if (amount <= 0){
+            System.out.println("Shopping Cart is empty");
+        }
+
     }
 }
