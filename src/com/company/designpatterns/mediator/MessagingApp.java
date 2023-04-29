@@ -5,23 +5,23 @@ import java.util.List;
 
 public class MessagingApp implements Mediator{
 
-    private List<Colleague> colleagues;
+    private List<Student> students;
 
     public MessagingApp(){
-        colleagues = new ArrayList<>();
+        students = new ArrayList<>();
     }
 
     @Override
-    public void sendMessage(String message, Colleague sender) {
-        for (Colleague colleague : colleagues) {
-            if (colleague != sender) {
-                colleague.receiveMessage(message);
+    public void sendMessage(String message, Student sender) {
+        for (Student student : students) {
+            if (student != sender) {
+                student.receiveMessage(message);
             }
         }
     }
 
     @Override
-    public void addColleague(Colleague colleague) {
-        colleagues.add(colleague);
+    public void addStudent(Student student) {
+        students.add(student);
     }
 }

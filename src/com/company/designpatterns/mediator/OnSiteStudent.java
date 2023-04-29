@@ -1,6 +1,6 @@
 package com.company.designpatterns.mediator;
 
-public class OnSiteStudent extends Colleague {
+public class OnSiteStudent extends Student {
     public OnSiteStudent(Mediator mediator) {
         super(mediator);
     }
